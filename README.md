@@ -33,6 +33,8 @@ show_all_output         = True
 
 Cron Example
 =============
-# Run git_update.py every 15 minutes, Mon - Fri, 8am - 6pm. Output to git_update.log file
+
+Run git_update.py every 15 minutes, Mon - Fri, 8am - 6pm. Output to git_update.log file
+
 */15 08-18 * * 1-5 /usr/bin/python /root/git_update.py > /root/git_update.log 2>&1
 
