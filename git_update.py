@@ -4,23 +4,12 @@ import grp
 import pwd
 import subprocess
 
-# this script is intended to work with git repositories already initialized
-# from within cpanel user accounts setup in their individual /home directories
-#
-# cpanel web directories reside in /home/<account>/public_html
-# the public_html directory is what should be initialized with git
-#
-# things to note:
-#       this will run the git pull command on the "dev" bucket only
-#       output of the git command is accessible in the "out" variable
-#       the --quiet flag pulls git quietly - remove if needed
-#       the output of this script can be piped to a log file
-
 # update these settings to match your server settings
 vhost_directory 	= '/home/'	# cpanel uses /home - most linux servers use a variation of /var/www/vhosts
 git_pull_command 	= 'git pull origin dev --quiet'		# set to your preferred git pull command, and what branch to pull
 show_all_output		= True
 
+# don't change anything below here, unless of course you need to
 for dirname, dirnames, filenames in os.walk(vhost_directory):
 
     # if /home/<username>/.git directory exists, run git pull as user
