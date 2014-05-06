@@ -33,7 +33,7 @@ vhost_directory         = '/home/'
 set your preferred git pull command and which branch to pull
 remove the --quiet flag to get full git output
 
-git_pull_command        = 'git pull origin dev --quiet'         # set to your preferred git pull command, and what branch to pull
+git_pull_command        = 'git pull origin dev --quiet'
 
 
 Set show_all_output to True if you want to see output of which directoreis are being pulled. Setting to False will only output results of git pulls that resulted in new updates
