@@ -14,7 +14,9 @@ Usage
 ============
 
 1) clone the py_git_update repo to your /root directory. 
+
 2) edit py_git_update/git_update.py and set your settings as outline below
+
 3) run as root: python py_git_update/git_update.py
 
 You will need to run this as root in order for you to access multiple virtual host directories which are owned by vps account holders. The directories initialized with git should be initialized using the virtual host's user account to keep file permissions sane. You don't want root to own all of your .git directories and pull new files down with only root permission. And if you use suPHP, the client sites will not run if the owner/group permissions are not setup correctly.
