@@ -1,6 +1,10 @@
 py_git_updater
+
 https://github.com/sourmojito/py_git_update
+
 Copyright (c) 2014 Brandon Simpson <http://brandon.cc>
+
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
